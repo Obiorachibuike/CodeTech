@@ -129,7 +129,7 @@ font-size: 30px;
 .header-logo-main{
   position: absolute;
 left: 20px;
-top: -28px;
+top: -39px;
 font-family: "Lora", serif;
 }
 .x{
@@ -1616,12 +1616,14 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-header {
   position: absolute;
-  top: 2rem;
+  top: 0rem;
   left: 0;
   width: 100%;
   height: 78px;
   text-align: center;
   z-index: 100;
+  background-color: #050505;
+  border-bottom: 1px solid #bbb8b8;
 }
 
 .s-header.sticky {
@@ -2172,12 +2174,7 @@ input::-moz-focus-inner {
   margin-bottom: 0;
 }
 
-.about-me__text {
-  -webkit-columns: 2 360px;
-  -moz-columns: 2 360px;
-  columns: 2 360px;
-  column-gap: 64px;
-}
+
 
 .about-me__buttons {
   margin-top: 4.8rem;
@@ -2720,7 +2717,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-works {
   padding-top: 19.2rem;
-  padding-bottom: 16rem;
+  height: 1950px;
   background-color: #ffffff;
 }
 
@@ -2734,7 +2731,11 @@ input::-moz-focus-inner {
 
 .masonry .grid-sizer,
 .masonry__brick {
-  width: 50%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap; 
+  margin: auto;
 }
 
 .masonry__brick {
@@ -2748,6 +2749,8 @@ input::-moz-focus-inner {
   padding: 60px;
   background-color: #EFEFEF;
   transition: all 0.5s ease-in-out;
+width: 400px;
+height: 400px;
 }
 
 /* item-folio thumb
@@ -2755,6 +2758,8 @@ input::-moz-focus-inner {
 .item-folio__thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 90%;
 }
 
 .item-folio__thumb .thumb-link {
@@ -2802,6 +2807,10 @@ input::-moz-focus-inner {
 
 .item-folio__thumb img {
   vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+  image-resolution: 100%;
+  object-fit: contain;
 }
 
 .item-folio__thumb .item-folio__project-link {
@@ -3604,3 +3613,12 @@ html[data-useragent*='rv:11.0'] .ss-go-top::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+#intro{
+  background-image: url('../images/intro-bg.jpg');
+  background-position: center;
+  width: 100%;
+  background-size: contain;
+}
+.masonry__brick {
+  width: 50%;
+}
